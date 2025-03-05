@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GGW</title>
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="Foruse/websitethings/favicon.png" type="image/png">
+    <style>
+        #text01 {
+position: relative;
+top: 7em;
+z-index: 5; }
+        .text01 {
+            color: rgb(255, 192, 211)
+}
+
+        
+.textborder {
+    filter: drop-shadow(1px 1px 0 #c60060) drop-shadow(-1px 1px 0  #c60060) drop-shadow(0 -1px 0  #c60060) drop-shadow(1px 0  #c60060);
+}
+    .page {
+        display: none;
+    }
+    .page.active {
+        display: block;
+    }
+       /* Custom scrollbar styles */
+      ::-webkit-scrollbar {
+        width: 8px; /* Scrollbar width */
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #807171; /* Red track */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #1e0d0d; /* Blue thumb */
+        border-radius: 4px; /* Rounded corners */
+    }
+    .sidebar {}
+
+    .contentbox-top{
+        background-color: var(--color-grayish-purple);
+        padding: 10px;
+    }
+
+    .contentbox-bottom {
+        color: black;
+    }
+    .sidebarbottom a{
+        text-decoration: none;
+        color: #c19a65;
+    }
+
+    .contentBox {
+        width: 500px;
+        min-height: 350px;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        margin-left: 70px;
+        margin-bottom: 25px;
+        border:  var(--color-beige);
+
+
+        /* Hides overflow from child elements */
+    }
+/*  */
+.sidebarbottom a{
+    margin-left: 10px;
+    font-size: 12px;
+
+}
+    .contentBox2 {
+        width: 500px;
+        min-height: 350px;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        margin-left: 70px;
+        margin-bottom: 25px;
+
+
+        /* Hides overflow from child elements */
+    }
+/*  */
+    .sidebar {}
+
+    .sidebartop {
+        background-color:  var(--color-beige);
+        padding: 20px;
+    }
+
+    .sidebarbottom {
+        color: black;
+    }
+    .icons img{
+        border-radius: 2px solid black;
+    }
+
+    .sidebar {
+        width: 150px;
+        min-height: 450px;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+        margin-left: 10px;
+
+        /* Hides overflow from child elements */
+    }
+    .sidebar2 {
+        width: 150px;
+        height: 450px;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+        margin-left: 10px;
+
+        /* Hides overflow from child elements */
+    }
+/*  */
+
+    .top-part {
+        background-color: var(--color-beige);
+        padding: 20px;
+    }
+
+    .bottom-part {
+        color: black;
+    }
+
+    .custom-box {
+        width: 910px;
+        min-height: 650px;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 3px 3px #775353;
+
+        /* Hides overflow from child elements */
+    }
+
+    button{
+    border: none;
+    background: white;
+}
+    .custom-box2 {
+        width: 920px;
+        min-height: 950px;
+        border-radius: 5px;
+        /* background of main contents */
+        background-color: white;
+        box-shadow: 3px 3px #c19a65;
+
+        /* Hides overflow from child elements */
+    }
+
+    .buttonleft i {
+        background-color: rgb(255, 255, 255);
+        padding: 4px;
+        border: outset;
+
+
+    }
+    .mainbar {
+        background-color: rgb(255, 255, 255);
+        width: 650px;
+        height: 500px;
+        margin-left: 20px;
+        border: 3px solid  var(--color-beige);
+        overflow-y:scroll;}
+    .mainbar2 {
+        background-color: rgb(255, 255, 255);
+        width: 650px;
+        min-height: 550px;
+        margin-left: 20px;
+    }
+  
+    nav{
+        background: white;
+    }
+
+
+
+
+</style>
+</head>
+
+
+<body style="background: url(Foruse/Backgrounds/Mainbackground.png); background-size: 90px;">
+    <!-- Home section -->
+   
+    
+    <div id="pages">
+        <!-- Deathbed -->
+        <div id="Deathbed" class="page active">
+            <div style="display: flex; justify-content: center;">
+                <div style="float: left; margin-top: 30px; border: 4px solid  #1e0d0d; margin: ;" class="custom-box2">
+    
+    
+                    <div class="top-part">
+                        <span
+                            style="background-color: rgb(255, 255, 255);padding-left: 70px;padding-right: 70px; border-radius: 9px;">https://www.Grimweaver.Death/</span>
+                        <div class="buttonleft" style="float: right;">
+                            <i class="fa-solid fa-window-minimize"></i>
+    
+                            <i class="fa-regular fa-window-maximize"></i>
+                            <i class="fa-solid fa-rectangle-xmark"></i>
+                        </div>
+                        <br>
+                    </div>
+        
+        
+                    <div class="bottom-part">
+                        <div style="display: flex; justify-content: center; margin-top: 10px;">
+        
+                            <nav>
+                                <a href="index.html">
+                                    <button style="margin-left: 100px;" >
+                                        <h5  class="textborder text01"  id="text01">Go back!</h5>
+                                        <img src="Foruse/websitethings/menu2/formenu.png" height="100"
+                                        onmouseover="this.src='Foruse/websitethings/menu2/formenu2.png' "
+                                        onmouseout="this.src='Foruse/websitethings/menu2/formenu.png'" alt="" />
+                                    </button>
+                                </a>
+                                
+                              
+                            </nav>
+                        </div>
+        
+        
+                        <div>
+                            <div class="maincontents" style="display: flex;">
+        
+        
+                                <div style="float: left; margin-top: 30px; border: 2px solid  #c19a65;; margin: ;" class="sidebar2">
+                                    <div class="sidebartop">
+                                        
+                                    </div>
+                            
+                                    
+                                    <div style="" class="sidebarbottom">
+                                     
+                                        <nav>
+                                            <a href="#" data-page="home">↪ Sexorcists</a>
+                                            <br>
+                                            <br>
+                                            <a href="" data-page="Deathbed">↪ A Deathbed Wonderland</a>
+                                            <br>
+                                            <br>
+                                            <a href="#" data-page="services">↪Hollow songs</a>
+                                            <br>
+                                            <br>
+                                        </nav>
+                                    
+                                    </div>
+                                    
+                                  </div>
+        
+        
+                                <div class="mainbar2">
+        
+        <!-- main menu -->
+                   
+        
+        <center>
+            <h2 class="text01 textborder">Your dreams suck</h2>
+          
+
+        </center>
+        
+        
+        
+        <!-- end of startmainmenu -->
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+        <!-- the end -->
+         <!-- the start about -->
+        <div id="about" class="page">
+            <h1>About Us</h1>
+            <p>Learn more about our mission and values here.</p>
+        </div>
+        <!-- the end -->
+         <!-- the start of services -->
+        <div id="services" class="page">
+            <h1>Our Services</h1>
+            <p>Explore the services we offer to our clients.</p>
+        </div>
+        <!-- the end -->
+         <!-- the start of contact -->
+        <div id="contact" class="page">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us through this page.</p>
+        </div>
+        <!-- end of contacts -->
+    </div>
+    <!-- new -->
+
+    
+
+    <script>
+        const buttons = document.querySelectorAll('nav button');
+        const pages = document.querySelectorAll('.page');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-target');
+
+                pages.forEach(page => {
+                    if (page.id === target) {
+                        page.classList.add('active');
+                    } else {
+                        page.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+    
+  <footer class="footer">
+        <small>
+            <p style="font-style: italic;">&copy; Copyright ©[2025] GrimGrimWeaver & Deathenize. All Rights Reserved.</p>
+        </small>
+    </footer>
+</body>
+</html>

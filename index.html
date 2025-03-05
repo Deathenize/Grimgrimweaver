@@ -7,201 +7,595 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="content-style-type" content="text/css">
     <meta http-equiv="content-script-type" content="text/javascript">
-
-    <link rel="icon" href="symbols/cakered.png" type="image/x-icon">
-    <style>
-        /* Custom scrollbar styles */
-        ::-webkit-scrollbar {
-            width: 8px; /* Scrollbar width */
-        }
-
-        ::-webkit-scrollbar-track {
-            background-color:rgba(214,220,224,255); /* Red track */
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background-color: #8D99AE; /* Blue thumb */
-            border-radius: 4px; /* Rounded corners */
-        }
-        .sidebar {}
-
-        .contentbox-top{
-            background-color:  rgba(214,220,224,255);
-            padding: 10px;
-        }
-
-        .contentbox-bottom {
-            color: black;
-        }
-
-        .contentBox {
-            width: 500px;
-            min-height: 350px;
-            border-radius: 5px;
-            background-color: rgb(255, 255, 255);
-            margin-left: 70px;
-            margin-bottom: 25px;
-
-
-            /* Hides overflow from child elements */
-        }
-/*  */
-        .sidebar {}
-
-        .sidebartop {
-            background-color:  rgba(214,220,224,255);
-            padding: 20px;
-        }
-
-        .sidebarbottom {
-            color: black;
-        }
-
-        .sidebar {
-            width: 150px;
-            min-height: 450px;
-            border-radius: 5px;
-            overflow: hidden;
-            background-color: rgb(255, 255, 255);
-            margin-left: 10px;
-
-            /* Hides overflow from child elements */
-        }
-/*  */
-
-        .top-part {
-            background-color: #d20051;
-            padding: 20px;
-        }
-
-        .bottom-part {
-            color: black;
-        }
-
-        .custom-box {
-            width: 900px;
-            min-height: 650px;
-            border-radius: 5px;
-            overflow: hidden;
-            background-color: rgba(237,242,245,255);
-            box-shadow: 3px 3px rgba(96, 0, 42, 0.53);
-
-            /* Hides overflow from child elements */
-        }
-
-        .buttonleft i {
-            background-color: rgb(229, 230, 235);
-            padding: 4px;
-            border: outset;
-
-
-        }
-        .mainbar{
-            background-color: rgb(255, 255, 255);
-            width: 650px;
-            height: 500px;
-            margin-left: 20px;
-            border: 3px solid  #aac6d4;
-            overflow-y:scroll;
-
-
-
-
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cherry+Bomb+One&family=Fontdiner+Swanky&family=Gravitas+One&family=Pacifico&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Foruse/websitethings/favicon.png" type="image/png">
 </head>
+<style>
+    #text01 {
+        position: relative;
+        top: 7em;
+        z-index: 5;
+    }
 
-<body style="background: url(Foruse/Backgrounds/Mainbackground.png); background-size: 150px;">
-    <div style="display: flex; justify-content: center;">
-        <div style="float: left; margin-top: 30px; border: 4px solid  #d20051; margin: ;" class="custom-box">
+    .text01 {
+        color: rgb(255, 192, 211)
+    }
+
+    a {
+        color: #f64d91;
+        text-decoration: none;
+    }
 
 
-            <div class="top-part">
-                <span
-                    style="background-color: rgb(229, 230, 235);padding-left: 70px;padding-right: 70px; border-radius: 9px;">https://www.Grimweaver.Death/</span>
-                <div class="buttonleft" style="float: right;">
-                    <i class="fa-solid fa-window-minimize"></i>
+    .top-part {
+        background: url(Art/borders/toppart.png);
+        height: 69px;
+    }
 
-                    <i class="fa-regular fa-window-maximize"></i>
-                    <i class="fa-solid fa-rectangle-xmark"></i>
+    .top-part2 {
+        background: url(Art/borders/toppart2.png);
+        height: 110px;
+    }
+
+    .bottom-part {
+        color: black;
+    }
+
+
+
+    .custom-box2 {
+        width: 900px;
+        min-height: 950px;
+        border-radius: 5px;
+        /* background of main contents */
+        background: url(Foruse/Backgrounds/mainbarbg.png);
+        background-size: 350px;
+
+        box-shadow: 3px 3px #ff68a5;
+
+        /* Hides overflow from child elements */
+    }
+
+    .mainbar {
+        background-color: rgb(255, 255, 255);
+        width: 650px;
+        height: 500px;
+        margin-left: 20px;
+        border: 3px solid var(--color-beige);
+        overflow-y: scroll;
+    }
+</style>
+
+<body style="background: url(Foruse/Backgrounds/Mainbackground.png); background-size: 100px;">
+
+    <!-- Home section -->
+
+    <div id="Home" class="page active">
+        <div style="display: flex; justify-content: center;">
+            <!-- color of border -->
+            <div style="float: left; margin-top: 30px; border: 4px solid #9b0058; margin: ;" class="custom-box2">
+
+
+                <div class="top-part">
+
+
                 </div>
                 <br>
-            </div>
+                <center><a href="index.html" class="turnover"><img height="100"
+                            src="Foruse/websitethings/header/header.png" alt=""></a></center>
 
 
-            <div class="bottom-part">
-                <div style="display: flex; justify-content: center; margin-top: 10px;">
+                <!--  top white part-->
+                <center>
+                    <div style="background: white; min-height: 500px; width: 800px ; margin-top: 20px; ">
+                        <div style="" class="top-part2">
+
+                            <a style="margin-right: 5px;" class="menuitem fontdiner-swanky-regular" href="About.html"><i
+                                    class="fa-solid fa-star"></i> About </a>
+
+                            <a class="menuitem fontdiner-swanky-regular" href="Characters.html"><i
+                                    class="fa-solid fa-star"></i> Characters</a>
+
+                            <a class="menuitem fontdiner-swanky-regular" href="comga.html"><i
+                                    class="fa-solid fa-star"></i> Comics, games and Art</a>
 
 
-                    <a href="About.html"> <img src="Foruse/websitethings/menu/about1.png" height="50"
-                            onmouseover="this.src='Foruse/websitethings/menu/about2.png' "
-                            onmouseout="this.src='Foruse/websitethings/menu/about1.png'" alt="" /></a>
+                        </div>
+
+                        <br>
+                        <br>
+                        <img class="border" height="195px" src="Art/banner/banner.png" alt="">
+                        <br>
+                        <br>
 
 
-                    <a href="About.html"> </a>
+                        <div style="display: flex;">
+                            <div class="sidebars">
+                                <!-- sidebars -->
+                                <script language="javascript" type="text/javascript"
+                                    src="//counter1.fc2.com/counter.php?id=38902614&main=1"></script><noscript><img
+                                        src="//counter1.fc2.com/counter_img.php?id=38902614&main=1" /></noscript>
+                                <!-- FC2 Counter  Ends here -->
+                                <!-- FC2 Counter  Starts here -->
+                                <script language="javascript" type="text/javascript"
+                                    src="//counter1.fc2.com/views.php?id=38902614&main=1"></script><noscript><img
+                                        src="//counter1.fc2.com/counter_now.php?id=38902614&main=1" /></noscript>
+                                <!-- FC2 Counter  Ends here -->
+
+                                <br>
+                                <br>
+                                <center>
+                                    <a class="blocks" href=""><b>ੈ✩‧₊˚Extra</b></a>
+                                    <br>
+                                    <br>
+                                    <a style="font-size: 10px; text-decoration: none;color: #ff68a5;"
+                                        href="Bunkersdiary.html">
+                                        <img height="100" src="Foruse/websitethings/sns/graveyard.png" alt="">
+                                        <br>
+                                        ੈ✩‧₊˚ Bunkers Diary</a>
+                                    <br>
+                                    <br>
 
 
-                    <a href="About.html"> <img src="Foruse/websitethings/menu/comprof1.png" height="50"
-                            onmouseover="this.src='Foruse/websitethings/menu/comprof2.png' "
-                            onmouseout="this.src='Foruse/websitethings/menu/comprof1.png'" alt="" /></a>
+                                    <a style="font-size: 10px; text-decoration: none;color: #ff68a5;"
+                                        href="QuestionBox.html">
+                                        <i style="font-size: xx-large; color: #ff68a5;"
+                                            class="fa-solid fa-screwdriver-wrench"></i><br>
+
+                                        ੈ✩‧₊˚ BugReports</a>
+                                    <br>
+
+                                    <a class="blocks" href=""><b>ੈ✩‧₊˚Socials</b></a>
+                                    <br>
+                                    <br>
+
+                                    <a style="font-size: 10px; text-decoration: none;color: #ff68a5;"
+                                        href="QuestionBox.html">
+                                        <img height="50" src="Foruse/websitethings/sns/neospring.png" alt="">
+                                        <br>
+                                        ੈ✩‧₊˚ Questions</a>
+
+                                    <br>
+                                    <br>
+
+                                    <a style="font-size: 10px; text-decoration: none;color: #ff68a5;"
+                                        href="https://x.com/grimweaverin">
+                                        <img height="50" src="Foruse/websitethings/sns/twitter.png" alt="">
+                                        <br>
+
+                                        ੈ✩‧₊˚ Twitter</a>
+                                    <br>
+                                    <a style="font-size: 10px; text-decoration: none;color: #ff68a5;"
+                                        href="https://toyhou.se/Deathenize">
+                                        <img height="50" src="Foruse/websitethings/sns/Toyhouse.png" alt="">
+                                        <br>
+
+                                        ੈ✩‧₊˚ toyhou.se</a>
+                                    <br>
+                                    <a style="font-size: 10px; text-decoration: none;color: #ff68a5;"
+                                        href="https://bsky.app/profile/grimweaverin.bsky.social">
+                                        <img height="50" src="Foruse/websitethings/sns/bluesky.png" alt="">
+                                        <br>
+
+                                        ੈ✩‧₊˚ Bluesky</a>
 
 
 
-                </div>
+                                </center>
 
-
-                <div>
-                    <div class="maincontents" style="display: flex;">
-
-
-                        <div style="float: left; margin-top: 30px; border: 4px solid   rgba(214,220,224,255); margin: ;" class="sidebar">
-                            <div class="sidebartop">
-                                
                             </div>
-                    
-                            
-                            <div class="sidebarbottom">
-                             
-                              <p></p>
-                              <p></p>
-                              <p></p>
+
+
+                            <div class="mainbars">
+                                <!-- barlevel -->
+                                <!-- start -->
+                                <div class="container">
+
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #8 (Web updates) <img
+                                            src="Art/pixels/new.gif" alt=""> </div>
+                                    <div>
+                                        <div class="text-area">
+
+                                            <!--up1  -->
+                                            <a href="Bunkersdiary.html"><img src="Art/pixels/kitty.png" alt="">
+                                                <br>
+                                                <small> Web opening : 5 march :D</small>
+
+                                            </a>
+                                            <br>
+                                           
+                                            <img height="200" src="Art/Art/dtnies/meandyou.png" alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #20 </div>
+
+                                    <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                        mini comics added </p>
+
+                                    <div class="text-area">
+                                        <a href="OrganFailure.html"><img style="border: 2px solid #9b0058;" height="199"
+                                                src="comics/thumbnails/1-OrganFaillure.png" alt=""></a>
+                                        <a href="OrganFailure.html"><img style="border: 2px solid #9b0058;" height="170"
+                                                src="comics/thumbnails/2-OrganFaillure.png" alt=""></a>
+                                        <a href="OrganFailure.html"><img style="border: 2px solid #9b0058;" height="209"
+                                                src="comics/thumbnails/3-OrganFaillure.png" alt=""></a>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #20 </div>
+                                    <div class="text-area">
+                                        <a href="Hankuro.html"><img height="599" src="Characters/Portraits/Hankuro.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Hankuro </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #19 </div>
+                                    <div class="text-area">
+                                        <a href="Disfuntos.html"><img height="660"
+                                                src="Characters/Portraits/Difuntos.png" alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Disfuntos </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #17 </div>
+                                    <div class="text-area">
+                                        <a href="Flannel.html"><img height="599" src="Characters/Portraits/Flannel.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Flannel </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #17 </div>
+                                    <div class="text-area">
+                                        <a href="Clemetine.html"><img height="599"
+                                                src="Characters/Portraits/Clemetine.png" alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Clemetine </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #16 </div>
+                                    <div class="text-area">
+                                        <a href="Lackey.html"><img height="599" src="Characters/Portraits/lackey.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Lackey </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #15 </div>
+                                    <div class="text-area">
+                                        <a href="Sweeper.html"><img height="599" src="Characters/Portraits/Chimney.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Sweeper </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #14 </div>
+                                    <div class="text-area">
+                                        <a href="Maple.html"><img height="599" src="Characters/Portraits/maple.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Maple </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #13 </div>
+                                    <div class="text-area">
+                                        <a href="Pray.html"><img height="599" src="Characters/Portraits/Pray.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Pray </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #13 </div>
+                                    <div class="text-area">
+                                        <a href="chini.html"><img height="599" src="Characters/Portraits/Chenaya.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Chini </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #12 </div>
+                                    <div class="text-area">
+                                        <a href="Yuusei.html"><img height="599" src="Characters/Portraits/Yuusei.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Nerves(Nervous system) </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #11 </div>
+                                    <div class="text-area">
+                                        <a href="Nerves.html"><img height="599" src="Characters/Portraits/Nerves.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Nerves(Nervous system) </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #10 </div>
+                                    <div class="text-area">
+                                        <a href="Nine.html"><img height="599" src="Characters/Portraits/Nine.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added:Nine(small Intestine) </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #9 </div>
+                                    <div class="text-area">
+                                        <a href="Azreal.html"><img height="599" src="Characters/Portraits/azreal.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Azreal </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #8 (Web updates) <img
+                                            src="Art/pixels/new.gif" alt=""> </div>
+                                    <div>
+                                        <div class="text-area">
+
+                                            <!--up1  -->
+                                            <a href="Bunkersdiary.html"><img src="Art/pixels/kitty.png" alt="">
+                                                <br>
+                                                <small>Bunkers Diary updated : Section concept (click on kitty)</small>
+
+                                            </a>
+                                            <!-- end -->
+                                            <!--up2  -->
+                                            <br>
+                                            <a href="Bunkersdiary.html"><img src="Art/pixels/loveletterred.png" alt="">
+                                                <br>
+                                                <small>Not using neospring anymore, transferrred to web itself</small>
+                                            </a>
+                                            <!-- end -->
+                                            <!--up3  -->
+                                            <br>
+                                            <a href="Bunkersdiary.html"><img src="Art/pixels/loveletterred.png" alt="">
+                                                <br>
+                                                <small>Old web unpublsihed(page will appear 404)</small>
+                                            </a>
+                                            <!-- end -->
+                                            <!--up3  -->
+                                            <br>
+                                            <a href="Bunkersdiary.html"><img src="Art/pixels/donutpink.png" alt="">
+                                                <br>
+                                                <small>new twitter @grimweaverin</small>
+                                            </a>
+                                            <!-- end -->
+                                            <!--up3  -->
+                                            <br>
+                                            <a href="Bunkersdiary.html"><img src="Art/pixels/donutpink.png" alt="">
+                                                <br>
+                                                <small>new CwCommentsection box</small>
+                                            </a>
+                                            <!-- end -->
+                                            <br>
+                                            <br>
+                                            <img height="200" src="Art/Art/dtnies/meandyou.png" alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #7 </div>
+                                    <div class="text-area">
+                                        <a href="Putriville.html"><img height="599"
+                                                src="Characters/Portraits/Putril.png" alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Putril </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #6 </div>
+                                    <div class="text-area">
+                                        <a href="Cardia.html"><img height="599" src="Characters/Portraits/Cardia.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Cardia </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #5 </div>
+                                    <div class="text-area">
+                                        <a href="Castell.html"><img height="599" src="Characters/Portraits/castell.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Castell </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #4 </div>
+                                    <div class="text-area">
+                                        <a href="Neurox.html"><img height="599" src="Characters/Portraits/Neurox.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Brain/Neurox </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #4 </div>
+                                    <div class="text-area">
+                                        <a href="m29.html"><img height="599" src="Art/Art/fullartworks/Hath&Jo.png"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #3 </div>
+                                    <div class="text-area">
+                                        <a href="Venture.html"><img height="599" src="Characters/Portraits/Venture.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Venture(lungs) </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #2 </div>
+                                    <div class="text-area">
+                                        <a href="Livinty.html"><img height="599" src="Characters/Portraits/livinty.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Livinty </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- start -->
+                                <div class="container">
+                                    <div style="color: #ff68a5;" class="top-box amatic-sc-bold"> <i
+                                            class="fa-solid fa-star"></i> Post #1 </div>
+                                    <div class="text-area">
+                                        <a href="Pechi.html"><img height="599" src="Characters/Portraits/Pechi.png"
+                                                alt=""></a>
+                                        <br>
+                                        <p style="color: #ff68a5; text-align: center;" class="top-box amatic-sc-bold">
+                                            Characters added: Pechi </p>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+
                             </div>
-                            
-                          </div>
-
-
-                        <div class="mainbar">
-
-<!-- start -->
-                            <div style="float: left; margin-top: 30px; border: 4px solid  rgba(214,220,224,255); margin: ;" class="contentBox">
-                                <div class="contentbox-top">
-                                    <span style="color: #8d99af;">Date: 28/08/2024</span>  <img src="Art/pixels/mochi.png" alt="">
-                                </div>
-                        
-                                
-                                <div class="contentbox-bottom">
-<div style="display: flex;justify-content: center;">
-    <img src="Characters/Portraits/Brainian.png" alt="" height="500px">
-
-</div>
-
-
-                                </div>
-                                
-                              </div>
-                              <!-- End -->
-
 
 
 
                         </div>
 
-                    </div>
-                </div>
-            </div>
 
+
+
+
+
+                    </div>
+                </center>
+                <!-- white part -->
+                <!-- end of mart -->
+            </div>
         </div>
+        <!-- end -->
+
     </div>
+
+
+
+
+
+
+  <footer class="footer">
+        <small>
+            <p style="font-style: italic;">&copy; Copyright ©[2025] GrimGrimWeaver & Deathenize. All Rights Reserved.</p>
+        </small>
+    </footer>
 </body>
 
 </html>

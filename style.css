@@ -1,0 +1,375 @@
+:root {
+  --color-pink: #fe9cc3;
+  --color-light-cyan: #b4e0e0;
+  --color-grayish-purple: #5e585c;
+  --color-beige: #d5c2b4;
+  --color-light-gray: #b3b3b3;
+}
+
+.border {
+  border-style: solid;
+  border-image: url(Art/borders/border.png) 8 round;
+  border-width: 7px;
+}
+.box18 {
+  margin: 1em 0; /* change 0 to auto for centering */
+  width: 80%; /* set the width to a multiple of 141+58px to fit nicely */
+}
+
+.u01 {
+  background: url(Art/borders/f-ue.gif) repeat-x;
+  height: 77px;
+  margin: 0 71px 0 70px;
+}
+
+.s01 {
+  background: url(Art/borders/f-sita.gif) repeat-x;
+  height: 76px;
+  margin: 0 71px 0 70px;
+}
+
+.box-top {
+  background-image: url(Art/borders/f-kado1.gif), url(Art/borders/f-kado2.gif);
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+  height: 77px;
+}
+
+.box-center {
+  background-image: url(Art/borders/f-migi.gif), url(Art/borders/f-hidari.gif);
+  background-position: top right, top left;
+  background-repeat: repeat-y, repeat-y;
+}
+
+.box-inner {
+  background: #fff;
+  margin: 0 71px 0 70px;
+  padding: 10px;
+}
+
+.box-bottom {
+  background-image: url(Art/borders/f-kado3.gif), url(Art/borders/f-kado4.gif);
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+  height: 76px;
+}
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 1;
+  font-style: normal;
+}
+.pac {
+  font-family: "Pacifico", serif;
+  font-weight: 1;
+  font-style: normal;
+}
+.cherry-bomb-one-regular {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.amatic-sc-regular {
+  font-family: "Amatic SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.gravitas-one-regular {
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.grav {
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.fontdiner-swanky-regular {
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.fond {
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.menuitem {
+  color: #e793b5;
+  text-decoration: none;
+  background: white;
+  padding: 5px 40px 3px 40px;
+  border-radius: 10px;
+  border: #cc719d 3px solid;
+  position: relative;
+  top: 2em;
+  border-image: url(Art/borders/border.png) 5 round;
+}
+.border-box {
+}
+
+.sidebars {
+  margin-left: 1em;
+  margin-top: 1em;
+  width: 90px; /* Adjust based on content */
+  height: 599px; /* Adjust based on content */
+  padding: 0px; /* Space inside the border */
+  border: 30px solid transparent; /* Creates space for the border */
+  border-image-source: url("Art/borders/border2.png"); /* Path to your image */
+  border-image-slice: 80 fill; /* Adjust based on how much of the image you want to be used */
+  border-image-repeat: round; /* Ensures the border stretches evenly */
+}
+.mainbars {
+  margin: 2em;
+  width: 590px;
+  min-height: 40em;
+  border: 7px double #ea166b;
+}
+.mainbars2 {
+  margin: 2em;
+  width: 700px;
+  min-height: 40em;
+  border: 7px double #ea166b;
+}
+.mainbars3 {
+  margin: 2em;
+  width: 780px;
+  min-height: 40em;
+  border: 7px double #ea166b;
+}
+.turnover img:hover{
+  filter: sepia(90%);
+}
+.container {
+  width: 500px; /* Adjust as needed */
+  min-height: 400px;
+  border: 5px solid pink; /* Light pink border */
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.container2 {
+  width: 599px; /* Adjust as needed */
+  min-height: 400px;
+  border: 5px solid pink; /* Light pink border */
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.top-box {
+  height: 40px; /* Adjust height as needed */
+  background-color: white;
+  border-bottom: 2px solid pink; /* Thin separator */
+  text-align: left;
+  padding: 5px;
+  font-weight: bold;
+}
+.text-area {
+  flex-grow: 1;
+  background-color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+  min-height: 500px;
+}
+.blocks {
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+  background: #c60060;
+  padding: 5px;
+  border-radius: 10px;
+}
+/* comment section box */
+
+
+#HCB_comment_box #hcb_form_content,
+  #HCB_comment_box #hcb_form_email,
+  #HCB_comment_box #hcb_form_name,
+  #HCB_comment_box #hcb_form_website {
+    background-color:#FFEEF0;
+    border: #c60060 3px double;
+    color: #c60060;
+    font-family: "Fontdiner Swanky", serif !important;
+
+
+  }
+  /* text box */
+  #HCB_comment_box textarea {
+    height:100px;
+    width: 400px;
+  }
+ 
+ 
+  .hcb-door-in {
+    display: none !important;
+}
+#HCB_comment_box h3 {
+  display: none !important;
+}
+.admin-link {
+  display: none !important;
+}
+.btn-secondary{
+  display: none !important;
+
+}
+.submit{
+  background: #c60060;
+}
+#hcb_submit {
+  background-color: #c60060 !important; /* Green background */
+  color: white; /* White text */
+
+  border: 4px double !important; /* Creates space for the border */
+
+   padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners */
+  font-family: "Fontdiner Swanky", serif !important;
+
+}
+
+.home-desc {
+  display: none;
+}
+.rss-icon {
+  display: none;
+}
+a[href*="rss_clean"] {
+  display: none;
+}
+
+
+  #HCB_comment_box #hcb_form_content,
+  #HCB_comment_box #hcb_form_email,
+  #HCB_comment_box #hcb_form_name,
+  #HCB_comment_box #hcb_form_website,
+  #HCB_comment_box #hcb_submit,
+  #HCB_comment_box .author-name,
+  #HCB_comment_box .hcb-comment-body,
+  #HCB_comment_box .hcb-comment-tb a 
+  {
+    font-size: 16px; /* Adjust the value depending on wanted text size */
+    color: #c60060;
+    font-family:"Pacifico", serif !important;
+    font-weight:100 !important;
+
+
+  }
+  #hcb_subscribe{
+    font-size: 10px !important;
+    font-family:"Pacifico", serif !important;
+    color: #c60060;
+
+
+  }
+  #hcb_settings{
+    font-size: 10px !important;
+    font-family:"Pacifico", serif !important;
+    color: #c60060 !important;
+
+
+  }
+  .likes {
+    background-image: url(Art/pixels/mochi.png);
+    background-size: cover; /* Ensures the image covers the entire element */
+    height:20px;
+    width: 20px;
+    position: relative;
+    left: 20em;
+    margin-top: 10px;
+
+}
+  .likes span {
+    background-image: url(Art/pixels/mochi.png);
+    background-size: cover; /* Ensures the image covers the entire element */
+    height:20px;
+    width: 20px;
+    position: relative;
+    left: 1em;
+    background: none;
+    font-family:"Pacifico", serif !important;
+color: #c60060;
+    margin-top: 10px;
+
+}
+  .likes img {
+    display: none; /* Hides any image inside the .likes div */
+}
+  .date{
+    color: #db749d !important;
+    font-family:"Pacifico", serif !important;
+
+  }
+  #HCB_comment_box .hcb-comment-tb 
+  {
+    width: 150px;
+  }
+  #HCB_comment_box .author-name,
+  #HCB_comment_box .hcb-comment-body,
+  #HCB_comment_box .hcb-comment-tb a {
+    font-size: 16px; /* Adjust the value depending on wanted text size */
+
+  }
+  .comment{
+    width:  350px;;
+    background-color:#FFEEF0;
+    border: #c60060 dashed 2px;
+    padding: 10px;
+    
+ 
+  }
+ 
+.hcb-like{
+  color: #c60060 !important;
+  font-family:"Pacifico", serif !important;
+
+  font-weight:100 !important;
+
+}
+.hcb-reply{
+  color: #e2548d !important;
+  font-family:"Pacifico", serif !important;
+  font-weight:100 !important;
+
+}
+.hcb-flag{
+  color: #e793b5 !important;
+  font-family:"Pacifico", serif !important;
+  font-weight:100 !important;
+
+
+}
+.text02 {
+  position: relative;
+  z-index: 5; }
+
+  .textborder {
+    filter: drop-shadow(1px 1px 0 #FF7F87) 
+        drop-shadow(-1px 1px 0 #FF7F87) 
+        drop-shadow(0 -1px 0 #FF7F87) 
+        drop-shadow(1px 0 0 #FF7F87);
+
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+}
+
+.footer p {
+    color: #d5006d; /* Darker pink text */
+    font-size: 16px;
+    margin: 0;
+}
